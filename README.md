@@ -1,6 +1,6 @@
 # #TechDayDATA
 
-This repository contains several resources related to my presentation in #TechDayDATA on @sandetel last 2019.06.27.
+This repository contains several resources related to my presentation in [#TechDayDATA](https://twitter.com/search?q=%23TechDayDATA&src=typd)  on [@sandetel](http://www.sandetel.es) last 2019.06.27.
 
 ## Objetive
 
