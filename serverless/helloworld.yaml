@@ -1,0 +1,20 @@
+metadata:
+  name: helloworld
+  labels:
+    nuclio.io/project-name: 5abdbedc-9d3c-4bd2-b758-f0c14b4c35d6
+spec:
+  description: "Showcases unstructured logging and a structured response."
+  handler: "main:handler"
+  runtime: "python:3.6"
+  resources: {}
+  minReplicas: 1
+  maxReplicas: 1
+  build:
+    functionSourceCode: IyBDb3B5cmlnaHQgMjAxNyBUaGUgTnVjbGlvIEF1dGhvcnMuCiMKIyBMaWNlbnNlZCB1bmRlciB0aGUgQXBhY2hlIExpY2Vuc2UsIFZlcnNpb24gMi4wICh0aGUgIkxpY2Vuc2UiKTsKIyB5b3UgbWF5IG5vdCB1c2UgdGhpcyBmaWxlIGV4Y2VwdCBpbiBjb21wbGlhbmNlIHdpdGggdGhlIExpY2Vuc2UuCiMgWW91IG1heSBvYnRhaW4gYSBjb3B5IG9mIHRoZSBMaWNlbnNlIGF0CiMKIyAgICBodHRwOi8vd3d3LmFwYWNoZS5vcmcvbGljZW5zZXMvTElDRU5TRS0yLjAKIwojIFVubGVzcyByZXF1aXJlZCBieSBhcHBsaWNhYmxlIGxhdyBvciBhZ3JlZWQgdG8gaW4gd3JpdGluZywgc29mdHdhcmUKIyBkaXN0cmlidXRlZCB1bmRlciB0aGUgTGljZW5zZSBpcyBkaXN0cmlidXRlZCBvbiBhbiAiQVMgSVMiIEJBU0lTLAojIFdJVEhPVVQgV0FSUkFOVElFUyBPUiBDT05ESVRJT05TIE9GIEFOWSBLSU5ELCBlaXRoZXIgZXhwcmVzcyBvciBpbXBsaWVkLgojIFNlZSB0aGUgTGljZW5zZSBmb3IgdGhlIHNwZWNpZmljIGxhbmd1YWdlIGdvdmVybmluZyBwZXJtaXNzaW9ucyBhbmQKIyBsaW1pdGF0aW9ucyB1bmRlciB0aGUgTGljZW5zZS4KCmRlZiBoYW5kbGVyKGNvbnRleHQsIGV2ZW50KToKICAgIGNvbnRleHQubG9nZ2VyLmluZm8oJ1RoaXMgaXMgYW4gdW5zdHJ1Y3R1cmVkIGxvZycpCgogICAgcmV0dXJuIGNvbnRleHQuUmVzcG9uc2UoYm9keT0nSGVsbG8sIGZyb20gTnVjbGlvIDpdJywKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGhlYWRlcnM9e30sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb250ZW50X3R5cGU9J3RleHQvcGxhaW4nLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgc3RhdHVzX2NvZGU9MjAwKQo=
+    runtimeAttributes:
+      repositories: []
+    codeEntryType: sourceCode
+    timestamp: 1561392683
+  platform: {}
+  eventTimeout: ""
+  version: 1

@@ -1,0 +1,25 @@
+version: '3.7'
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.1.1
+    container_name: elasticsearch
+    hostname: elasticsearch
+    environment:
+      - node.name=elastic01
+      - cluster.initial_master_nodes=elastic01
+      - cluster.name=saundweiv-cluster
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms16384m -Xmx16384m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - 9200:9200
+    volumes:
+      - ./custom_elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.1.1
+    ports:
+      - 5601:5601
+    hostname: kibana

@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  nifi:
+    image: apache/nifi:latest
+    ports:
+      - 8080:8080 # Unsecured HTTP Web Port
+    environment:
+      - NIFI_WEB_HTTP_PORT=8080
+      - NIFI_ELECTION_MAX_WAIT=1 min
+    volumes:
+      - ./nifi-data:/opt/nifi-data/
+      - ./python:/opt/nifi-python
+    extra_hosts:
+      - "elasticsearch:10.240.241.231"
+      - "nuclio:10.240.241.229"
